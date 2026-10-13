@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 64" width="900" height="192" role="img" aria-label="Pink Panther Fencing">
+<!-- DRAFT concept. The logo builds like a fence: posts drop, rails slide, the name rises. See README.md -->
+<style>
+  .post{transform-origin:50% 100%;animation:drop .55s cubic-bezier(.34,1.56,.64,1) both}
+  .post-1{animation-delay:.1s}.post-2{animation-delay:.3s}.post-3{animation-delay:.5s}
+  .rail{transform-origin:0 50%;animation:slide .5s cubic-bezier(.16,1,.3,1) both}
+  .rail-1{animation-delay:.85s}.rail-2{animation-delay:1s}
+  .w1,.w2{animation:rise .6s cubic-bezier(.16,1,.3,1) both}
+  .w1{animation-delay:1.3s}.w2{animation-delay:1.45s}
+  @keyframes drop{from{transform:translateY(-70px);opacity:0}to{transform:none;opacity:1}}
+  @keyframes slide{from{transform:scaleX(0)}to{transform:none}}
+  @keyframes rise{from{transform:translateY(10px);opacity:0}to{transform:none;opacity:1}}
+  @media (prefers-reduced-motion:reduce){.post,.rail,.w1,.w2{animation:none}}
+</style>
+<rect width="300" height="64" fill="#121010"/>
+<rect x="0" y="0" width="64" height="64" rx="12" fill="#f8048f"/>
+<g id="mark" fill="#121010">
+  <path class="post post-1" d="M10 20h10v38H10z"/>
+  <path class="post post-2" d="M27 12l5-6 5 6v46H27z"/>
+  <path class="post post-3" d="M44 20h10v38H44z"/>
+  <path class="post post-1 cap" d="M8 18h14v4H8z"/>
+  <path class="post post-3 cap" d="M42 18h14v4H42z"/>
+  <rect class="rail rail-1" x="4" y="28" width="56" height="5" fill="#f6f3ef"/>
+  <rect class="rail rail-2" x="4" y="44" width="56" height="5" fill="#f6f3ef"/>
+</g>
+<g id="word" font-family="Tactic Sans Expanded, 'Tactic Sans Exd', Impact, Arial Black, sans-serif" font-weight="900">
+  <text class="w1" x="80" y="31" font-size="23" fill="#f8048f" letter-spacing="0.5">PINK PANTHER</text>
+  <text class="w2" x="80" y="56" font-size="23" fill="#f6f3ef" letter-spacing="5.5">FENCING</text>
+</g>
+</svg>

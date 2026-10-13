@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 64" width="900" height="192" role="img" aria-label="Pink Panther Fencing">
+<!-- DRAFT concept. See README.md -->
+<rect width="300" height="64" fill="#121010"/>
+<rect x="0" y="0" width="64" height="64" rx="12" fill="#f8048f"/>
+<g id="mark" fill="#121010">
+  <path class="post post-1" d="M10 20h10v38H10z"/>
+  <path class="post post-2" d="M27 12l5-6 5 6v46H27z"/>
+  <path class="post post-3" d="M44 20h10v38H44z"/>
+  <path class="post post-1 cap" d="M8 18h14v4H8z"/>
+  <path class="post post-3 cap" d="M42 18h14v4H42z"/>
+  <rect class="rail rail-1" x="4" y="28" width="56" height="5" fill="#f6f3ef"/>
+  <rect class="rail rail-2" x="4" y="44" width="56" height="5" fill="#f6f3ef"/>
+</g>
+<g id="word" font-family="Tactic Sans Expanded, 'Tactic Sans Exd', Impact, Arial Black, sans-serif" font-weight="900">
+  <text class="w1" x="80" y="31" font-size="23" fill="#f8048f" letter-spacing="0.5">PINK PANTHER</text>
+  <text class="w2" x="80" y="56" font-size="23" fill="#f6f3ef" letter-spacing="5.5">FENCING</text>
+</g>
+</svg>
